@@ -14,14 +14,6 @@
     background-color: #fff;
     position: relative;
 }
-/* .homeHistory::before {
-    background-color: #000;
-    content: '';
-    height: 100%;
-    position: absolute;
-    right: 0;
-    width: 33vw;
-} */
 
 .boxTextStory{
     position: absolute;
