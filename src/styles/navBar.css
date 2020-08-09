@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+.site-nav {
+    background-color: rgb(236 73 40);
+    height: 120px;
+    overflow: hidden;
+    padding: 0 5vw;
+    z-index: 100;
+    display: flow-root;
+    position: relative;
+}
+.site-nav::after {
+    background-color: #000;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+/* .homeHistory::before {
+    background-color: #000;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 33vw;
+} */
+.site-nav__logo {
+    height: 2.875rem;
+    background-image: url("https://cdn.shoplo.com/0304/s/8/assets/logo.png?980");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    display: block;
+    float: left;
+    margin-top: 40px;
+}
+
+.site-nav__right {
+    float: right;
+}
+.site-nav__menu {
+    float: left;
+    position: relative;
+    margin: 40px 0 0;
+}
+.hover-this {
+    transition: all 0.3s ease;
+    float: left;
+    margin-left: 50px;
+}
+
+span {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+    line-height: 40px;
+    letter-spacing: .3em;
+}
+.navButt{
+    font-size: 36px;
+    list-style: none;
+    padding: 0;
+    animation-name: navChangeColor;
+    animation-duration: 45s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.sizeButt{
+    display: inline-block;
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+}
+
+@media(min-width: 900px) {
+    nav {
+          display: flex;
+          justify-content: space-around;
+    }
+}
+@media screen and (max-width: 770px) {
+    .site-nav {
+        background-color: transparent;
+    }
+    .site-nav__logo {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+    @keyframes navChangeColor {
+        0%   {color: #000;}
+        20%   {color: #000;}
+        24%   {color: #e06f1f;}
+        40%   {color: #e06f1f;}
+        44%  {color: #298d79;}
+        60%  {color: #298d79;}
+        64%   {color: #ff4dff}
+        80%   {color: #ff4dff}
+        84%   {color: #fff;}
+        96%  {color: #fff;}
+        100%  {color: #000;}
+    }
+    .navButt{
+        color:#ff4dff;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 650px) {
+    .navButt{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 580px) {
+    .navButt{
+        font-size: 26px;
+    }
+    .hover-this {
+        margin-left: 25px;
+    }
+}
+
+@media(max-width: 470px) {
+    .navButt{
+        font-size: 21px;
+    }
+    .hover-this {
+        margin-left: 15px;
+    }
+    .site-nav__logo {
+        height: 2.175rem;
+        margin-top: 45px;
+    }
+}
+
+@media(max-width: 360px) {
+    .navButt{
+        font-size: 26px;
+    }
+    .hover-this {
+        margin-left: 15px;
+    }
+    .site-nav__logo {
+        height: 0;
+    }
+    .site-nav__right {
+        float: none;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 300px) {
+    .navButt{
+        font-size: 22px;
+    }
+    .hover-this {
+        margin-left: 5px;
+    }
+}
+

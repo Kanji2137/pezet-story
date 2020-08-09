@@ -1,0 +1,89 @@
+
+.slideLeftFifth{
+    height: 660px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    max-width: calc(10vw + 600px);
+    width: 43vw;
+    padding: 30px 5vw;
+    top: 120px;
+    z-index: 15;
+    background-color: #000;
+    animation-name: slideLeftFifth;
+    animation-duration: 45s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideLeftFifth {
+    0%   {z-index: 15;}
+    79.99%  {z-index: 15;}
+    80%  {z-index: 24;}
+    99.99%  {z-index: 24;}
+    100%  {z-index: 15;}
+}
+.blackSheetBigLetterFifth {
+    z-index: 22;
+    bottom: 40px;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    height: 70px;
+    animation-name: blackSheetBigLetterFifth;
+    animation-duration: 45s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blackSheetBigLetterFifth {
+    0%   {width: 36px;}
+    80%   {width: 36px;}
+    84%   {width: 0px;}
+    96%   {width: 0px;}
+    100%  {width: 36px;}
+}
+
+.blackSheetSmallLetterFifth {
+    z-index: 22;
+    bottom: 40px;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    height: 50px;
+    animation-name: blackSheetSmallLetterFifth;
+    animation-duration: 45s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blackSheetSmallLetterFifth {
+    0%   {width: 35px;}
+    80%   {width: 35px;}
+    84%   {width: 0px;}
+    96%   {width: 0px;}
+    100%  {width: 35px;}
+}
+
+@media only screen and (max-width: 770px) {
+    .slideLeftFifth{
+        top: 220px;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+   }
+   
+   @media only screen and (max-width: 430px) {
+       .slideLeftFifth{
+           height: 500px;
+       }
+   }
+
+   @media only screen and (max-width: 350px) {
+    .slideLeftFifth{
+        height: 600px;
+    }
+}

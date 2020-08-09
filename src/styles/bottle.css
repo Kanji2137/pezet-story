@@ -1,0 +1,52 @@
+.container {
+    height: 150px;
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 30px;
+    top: 570px;
+    z-index: 26;
+}
+
+.polylineStyle{
+    fill:none;
+    stroke:#fff;
+    stroke-width:3;
+    animation-name: polylineStyle;
+    animation-duration: 45s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes polylineStyle {
+    0%   {fill: #000;}
+    20%   {fill: #5a5a5a;}
+    24%   {fill: #ff4dff;}
+    40%   {fill: #ff4dff;}
+    44%  {fill: #298d79;}
+    60%  {fill: #298d79;}
+    64%   {fill: #e06f1f}
+    80%   {fill: #e06f1f}
+    84%   {fill: #000;}
+    100%  {fill: #000;}
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .container {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        left: 80px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .container {
+        height: 0;
+        width: 0;
+    }
+}

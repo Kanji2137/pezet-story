@@ -1,31 +1,66 @@
-.App {
-  text-align: center;
+@import "styles/welcomSection.css";
+@import "styles/main.css";
+@import "styles/navBar.css";
+@import "styles/homeHistory.css";
+@import "styles/projects.css";
+@import "styles/footer.css";
+
+@import "styles/slider.css";
+@import "styles/textMusic.css";
+@import "styles/slidesText/slideLeftTextFirst.css";
+@import "styles/slidesText/slideLeftTextSec.css";
+@import "styles/slidesText/slideLeftTextThird.css";
+@import "styles/slidesText/slideLeftTextFourth.css";
+@import "styles/slidesText/slideLeftTextFifth.css";
+
+@import "styles/bottle.css";
+
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(.3);
+  z-index: 1000;
+}
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff!important;
+}
+.bg-primary {
+  background-color: #000 !important;
+}
+*{
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

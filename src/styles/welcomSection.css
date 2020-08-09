@@ -1,0 +1,22 @@
+/* .hero {
+    min-height: 660px;
+    position: relative;
+} */
+
+.hero {
+    background-color: #000;
+    min-height: 660px;
+    overflow: hidden;
+    padding: 0 5vw;
+    z-index: 1;
+    display: flow-root;
+}
+.hero::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.container{
+    height: 200px;
+    width: 200px;
+}
