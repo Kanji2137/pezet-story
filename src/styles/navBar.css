@@ -4,23 +4,16 @@
     height: 120px;
     overflow: hidden;
     padding: 0 5vw;
-    z-index: 100;
+    z-index: 20;
     display: flow-root;
     position: relative;
-}
-.site-nav::after {
-    background-color: #000;
-    height: 120px;
-    width: 100%;
-    position: absolute;
-    z-index: 5;
 }
 .site-nav::before {
     background-color: #000;
     height: 120px;
     width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 20;
 }
 .site-nav__logo {
     height: 2.875rem;

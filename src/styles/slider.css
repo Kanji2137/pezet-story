@@ -14,7 +14,7 @@
 }
 
 .blackSheet{
-  z-index: 20;
+  z-index: 19;
   overflow: hidden;
   position: absolute;
   background-color: #000;
